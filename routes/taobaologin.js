@@ -52,7 +52,7 @@ function initParam() {
         console.log("barcodeFileFullName, cookiesFileFullPath can not be empty");
     }
 }
-
+  
 /*
  * page 参数设置
  * */
