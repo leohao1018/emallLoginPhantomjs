@@ -62,6 +62,7 @@ router.get('/getCookies', function (req, res, next) {
 
     var cookieFileFullName = utils.generateCookieFileFullName(utils.generateFilePrefix(requestToken));
 
+    // 这里获取的cookie 需要去重否则有些重复的cookie 无法使用
     utils.readFile(cookieFileFullName, res);
 })
 
