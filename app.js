@@ -9,6 +9,8 @@ var cors = require('cors');
 var routes = require('./routes/index');
 // var users = require('./routes/users');
 var taobao = require('./routes/taobao');
+var lagou = require('./routes/lagou');
+
 
 var app = express();
 
@@ -29,6 +31,9 @@ app.use(cors());
 app.use('/', routes);
 // app.use('/users', users);
 app.use('/taobao', taobao)
+app.use('/lagou', lagou)
+
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
